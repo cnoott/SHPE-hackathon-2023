@@ -5,8 +5,8 @@ const Header = () => {
     backgroundColor: '#D3D3D3',
     padding: '10px',
     display: 'flex',
-    justifyContent: 'space-around',
-    fontFamily: 'Old Standard TT, serif',
+    alignItems: 'center',
+    fontFamily: 'Georgia, serif',
     fontSize: '15px',
     letterSpacing: '1px',
   };
@@ -14,8 +14,7 @@ const Header = () => {
   const linkStyle = {
     textDecoration: 'underline',
     color: 'blue',
-    marginLeft: '10px'
-    
+    marginRight: '10px',
   };
 
   return (
