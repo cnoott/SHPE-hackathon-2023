@@ -21,18 +21,33 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-      <div className="fixed inset-0 flex justify-center sm:px-8">
-        <div className="flex w-full max-w-7xl lg:px-8">
-          <div className="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20" />
-        </div>
-      </div>
-      <div className="relative">
-        <Header />
-        <main>
+
+      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+
+    <span className="isolate inline-flex rounded-md shadow-sm items-center pb-8">
+      <button
+        type="button"
+        className="relative inline-flex items-center rounded-l-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+      >
+        Go to the past
+      </button>
+      <button
+        type="button"
+        className="relative -ml-px inline-flex items-center bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+      >
+        Go to the present
+      </button>
+        <a href='/future'>
+      <button
+        type="button"
+        className="relative -ml-px inline-flex items-center rounded-r-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+      >
+        Go to the future
+      </button>
+  </a>
+    </span>
           <Component previousPathname={previousPathname} {...pageProps} />
-        </main>
-        <Footer />
-      </div>
+  </main>
     </>
   )
 }

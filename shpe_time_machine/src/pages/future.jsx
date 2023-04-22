@@ -16,6 +16,7 @@ import logoAirbnb from '@/images/logos/airbnb.svg'
 import logoFacebook from '@/images/logos/facebook.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import logoStarbucks from '@/images/logos/starbucks.svg'
+
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -26,6 +27,7 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 
 function MailIcon(props) {
+
   return (
     <svg
       viewBox="0 0 24 24"
@@ -261,7 +263,7 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer, founder, and amateur astronaut.
+            The Society of Hispanic Professional Engineers
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Spencer, a software designer and entrepreneur based in New York

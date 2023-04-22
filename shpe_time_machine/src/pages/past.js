@@ -16,11 +16,13 @@ export default function Home() {
   };
 
   return (
-    <div style={{ backgroundColor: '#D3D3D3', minHeight: '100vh' }}>
-      <Header />
-      <main style={mainStyle}>
-        <p>wadup</p>
-      </main>
-    </div>
+    <>
+      <div style={{ backgroundColor: '#D3D3D3', minHeight: '100vh' }} className='w-full'>
+        <Header />
+        <main style={mainStyle}>
+          <p>wadup</p>
+        </main>
+      </div>
+    </>
   );
 }
