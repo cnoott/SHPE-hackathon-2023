@@ -1,12 +1,26 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import { Inter } from 'next/font/google';
+import Header from './header';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
+  const mainStyle = {
+    backgroundColor: '#D3D3D3',
+    minHeight: '100vh',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    padding: '24px',
+    borderTop: '2px solid black',
+  };
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        <p> wadup bitches</p>
-    </main>
-  )
+    <div style={{ backgroundColor: '#D3D3D3', minHeight: '100vh' }}>
+      <Header />
+      <main style={mainStyle}>
+        <p>wadup</p>
+      </main>
+    </div>
+  );
 }
